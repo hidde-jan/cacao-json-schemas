@@ -3,6 +3,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "action",
   "description": "The action step workflow step contains the actual commands to be executed by an agent against a set of targets. These commands are intended to be processed sequentially. In addition to the inherited properties, this section defines five more specific properties that are valid for this type.",
+  "type": "object",
   "allOf": [
     {
       "$ref": "workflow-step.json"
