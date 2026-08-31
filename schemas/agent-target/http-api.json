@@ -1,6 +1,6 @@
 {
   "$id": "https://raw.githubusercontent.com/oasis-open/cacao-json-schemas/main/schemas/agent-target/http-api.json",
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "http-api",
   "description": "This type defines an HTTP API object and is used for commands that need to be processed or executed by an HTTP API. In addition to the inherited properties, this section defines the following additional properties that are valid for this type.",
   "type": "object",

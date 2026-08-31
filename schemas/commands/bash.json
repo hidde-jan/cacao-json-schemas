@@ -1,6 +1,6 @@
 {
   "$id": "https://raw.githubusercontent.com/oasis-open/cacao-json-schemas/main/schemas/commands/bash.json",
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "bash",
   "description": "The bash command represents a command that is intended to be processed via a shell without a login/remote connection. In addition to the inherited properties, this section defines the following additional properties that are valid for this type. Either the 'command' property or the 'command_b64' property MUST be present.",
   "type": "object",

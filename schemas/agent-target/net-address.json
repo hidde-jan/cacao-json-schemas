@@ -1,6 +1,6 @@
 {
   "$id": "https://raw.githubusercontent.com/oasis-open/cacao-json-schemas/main/schemas/agent-target/net-address.json",
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "net-address",
   "description": "This type defines a network address object and is used for commands that need to be processed or executed by a device at a network address. In addition to the inherited properties, this section defines three additional specific properties that are valid for this type.",
   "type": "object",

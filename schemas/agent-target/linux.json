@@ -1,6 +1,6 @@
 {
   "$id": "https://raw.githubusercontent.com/oasis-open/cacao-json-schemas/main/schemas/agent-target/linux.json",
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "linux",
   "description": "This type defines a Linux system object and is used for commands that need to be processed or executed by a Linux system. In addition to the inherited properties, this section defines four additional specific properties that are valid for this type.",
   "type": "object",
