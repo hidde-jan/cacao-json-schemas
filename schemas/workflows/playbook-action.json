@@ -13,9 +13,7 @@
         "type": {
           "type": "string",
           "description": "The value of this property MUST be 'playbook-action'.",
-          "enum": [
-            "playbook-action"
-          ]
+          "const": "playbook-action"
         },
         "playbook_id": {
           "$ref": "../data-types/identifier.json",

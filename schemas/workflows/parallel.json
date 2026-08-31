@@ -13,9 +13,7 @@
         "type": {
           "type": "string",
           "description": "The value of this property MUST be 'parallel'.",
-          "enum": [
-            "parallel"
-          ]
+          "const": "parallel"
         },
         "next_steps": {
           "type": "array",

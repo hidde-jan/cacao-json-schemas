@@ -13,9 +13,7 @@
         "type": {
           "type": "string",
           "description": "The value of this property MUST be 'action'.",
-          "enum": [
-            "action"
-          ]
+          "const": "action"
         },
         "commands": {
           "type": "array",
