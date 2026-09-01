@@ -8,12 +8,12 @@
     "type": {
       "type": "string",
       "description": "The value of this property MUST be 'playbook'.",
-      "enum": ["playbook"]
+      "const": "playbook"
     },
     "spec_version": {
       "type": "string",
       "description": "The version of the specification used to represent this playbook. The value of this property MUST be 'cacao-2.0' to represent the version of this specification.",
-      "enum": ["cacao-2.0"]
+      "const": "cacao-2.0"
     },
     "id": {
       "$ref": "data-types/identifier.json",

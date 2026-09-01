@@ -7,9 +7,7 @@
   "properties": {
     "type": {
       "type": "string",
-      "enum": [
-        "extension-definition"
-      ],
+      "const": "extension-definition",
       "description": "The value of this property MUST be 'extension-definition'."
     },
     "name": {
