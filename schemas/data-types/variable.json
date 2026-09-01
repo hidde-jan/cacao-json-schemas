@@ -16,7 +16,8 @@
     "value": {
       "type": [
         "string",
-        "null"
+        "null",
+        "object"
       ],
       "description": "The value MUST be defined as one of the following JSON types: a string value, a number or boolean encoded as a JSON string, an empty string \"\", the special JSON NULL value, or a JSON object. \n\nNOTE: An empty string is NOT equivalent to a JSON NULL value. An empty string means the value is known to be empty. A value of NULL means the value is unknown or undefined."
     },
