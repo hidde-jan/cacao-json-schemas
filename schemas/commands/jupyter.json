@@ -13,9 +13,7 @@
         "type": {
           "type": "string",
           "description": "The value of this property MUST be 'jupyter'.",
-          "enum": [
-            "jupyter"
-          ]
+          "const": "jupyter"
         },
         "command_b64": {
           "type": "string",

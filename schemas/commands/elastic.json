@@ -13,9 +13,7 @@
         "type": {
           "type": "string",
           "description": "The value of this property MUST be 'elastic'.",
-          "enum": [
-            "elastic"
-          ]
+          "const": "elastic"
         },
         "command_b64": {
           "type": "string",

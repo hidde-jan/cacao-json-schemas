@@ -13,9 +13,7 @@
         "type": {
           "type": "string",
           "description": "The value of this property MUST be 'kestrel'.",
-          "enum": [
-            "kestrel"
-          ]
+          "const": "kestrel"
         },
         "command_b64": {
           "type": "string",

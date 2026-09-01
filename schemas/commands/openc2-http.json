@@ -13,7 +13,7 @@
         "type": {
           "type": "string",
           "description": "The value of this property MUST be 'openc2-http'.",
-          "enum": ["openc2-http"]
+          "const": "openc2-http"
         },
         "command": {
           "type": "string",
