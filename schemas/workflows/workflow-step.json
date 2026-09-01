@@ -89,14 +89,7 @@
     {
       "properties": {
         "type": {
-          "enum": [
-            "action",
-            "if-condition",
-            "parallel",
-            "playbook-action",
-            "switch-condition",
-            "while-condition"
-          ]
+          "$ref": "#/$defs/workflow-step-type-enum-not-start-or-end"
         }
       },
       "anyOf": [
@@ -141,6 +134,17 @@
         "if-condition",
         "while-condition",
         "switch-condition"
+      ]
+    },
+    "workflow-step-type-enum-not-start-or-end": {
+      "description": "The subset of workflow-step-type-enum excluding 'start' and 'end', used to scope the on_completion/on_success/on_failure exclusivity rules below to steps other than start/end (which have their own, separate rules).",
+      "enum": [
+        "action",
+        "if-condition",
+        "parallel",
+        "playbook-action",
+        "switch-condition",
+        "while-condition"
       ]
     }
   }
