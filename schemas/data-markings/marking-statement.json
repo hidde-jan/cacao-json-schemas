@@ -12,9 +12,7 @@
       "properties": {
         "type": {
           "type": "string",
-          "enum": [
-            "marking-statement"
-          ],
+          "const": "marking-statement",
           "description": "The value of this property MUST be 'marking-statement'."
         },
         "statement": {

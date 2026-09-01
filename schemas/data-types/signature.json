@@ -8,9 +8,7 @@
     "type": {
       "type": "string",
       "description": "The value of this property MUST be 'jss'.",
-      "enum": [
-        "jss"
-      ]
+      "const": "jss"
     },
     "id": {
       "$ref": "identifier.json",
