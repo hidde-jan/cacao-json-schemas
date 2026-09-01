@@ -75,27 +75,58 @@
   "required": ["type"],
   "anyOf": [
     {
-      "if": {
-        "properties": {
-          "type": { "const": "end" }
+      "properties": {
+        "type": { "const": "end" }
+      },
+      "not": {
+        "anyOf": [
+          { "required": ["on_completion"] },
+          { "required": ["on_failure"] },
+          { "required": ["on_success"] }
+        ]
+      }
+    },
+    {
+      "properties": {
+        "type": {
+          "enum": [
+            "action",
+            "if-condition",
+            "parallel",
+            "playbook-action",
+            "switch-condition",
+            "while-condition"
+          ]
         }
       },
-      "then": {
-        "not": {
-          "required": ["on_completion", "on_failure", "on_success"]
+      "anyOf": [
+        {
+          "required": ["on_completion"],
+          "not": {
+            "anyOf": [
+              { "required": ["on_failure"] },
+              { "required": ["on_success"] }
+            ]
+          }
+        },
+        {
+          "required": ["on_success"],
+          "not": {
+            "required": ["on_completion"]
+          }
         }
-      }
+      ]
     },
     {
       "required": ["on_completion"],
+      "properties": {
+        "type": { "const": "start" }
+      },
       "not": {
-        "required": ["on_failure", "on_success"]
-      }
-    },
-    {
-      "required": ["on_success"],
-      "not": {
-        "required": ["on_completion"]
+        "anyOf": [
+          { "required": ["on_failure"] },
+          { "required": ["on_success"] }
+        ]
       }
     }
   ],  
