@@ -13,9 +13,7 @@
         "type": {
           "type": "string",
           "description": "The value of this property MUST be 'net-address'.",
-          "enum": [
-            "net-address"
-          ]
+          "const": "net-address"
         },
         "address": {
           "type": "object",

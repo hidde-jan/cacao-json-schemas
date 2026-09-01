@@ -13,9 +13,7 @@
         "type": {
           "type": "string",
           "description": "The value of this property MUST be 'http-api'.",
-          "enum": [
-            "http-api"
-          ]
+          "const": "http-api"
         },
         "address": {
           "type": "object",

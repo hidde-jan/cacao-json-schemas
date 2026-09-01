@@ -13,9 +13,7 @@
         "type": {
           "type": "string",
           "description": "The value of this property MUST be 'individual'.",
-          "enum": [
-            "individual"
-          ]
+          "const": "individual"
         },
         "contact": {
           "$ref": "../data-types/contact.json",
