@@ -11,7 +11,6 @@
     {
       "properties": {
         "type": {
-          "type": "string",
           "const": "marking-statement",
           "description": "The value of this property MUST be 'marking-statement'."
         },

@@ -10,7 +10,6 @@
     {
       "properties": {
         "type": {
-          "type": "string",
           "description": "The value of this property MUST be 'http-basic'.",
           "const": "http-basic"
         },

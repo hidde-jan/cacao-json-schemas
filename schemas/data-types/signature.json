@@ -6,7 +6,6 @@
   "type": "object",
   "properties": {
     "type": {
-      "type": "string",
       "description": "The value of this property MUST be 'jss'.",
       "const": "jss"
     },
@@ -122,7 +121,6 @@
           "type": "string"
         },
         {
-          "type": "string",
           "enum": [
             "RS256",
             "RS384",

@@ -39,7 +39,6 @@
           "type": "string"
         },
         {
-          "type": "string",
           "enum": [
             "http-basic",
             "oauth2",

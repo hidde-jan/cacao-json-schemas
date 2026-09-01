@@ -11,12 +11,10 @@
     {
       "properties": {
         "type": {
-          "type": "string",
           "description": "The value of this property MUST be 'marking-tlp'.",
           "const": "marking-tlp"
         },
         "tlpv2_level": {
-          "type": "string",
           "enum": [
             "TLP:RED",
             "TLP:AMBER",

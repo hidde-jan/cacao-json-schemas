@@ -61,7 +61,6 @@
     "unevaluatedProperties": false,
     "$defs": {
         "region-enum": {
-            "type": "string",
             "enum": [
                 "africa",
                 "eastern-africa",

@@ -11,7 +11,6 @@
     {
       "properties": {
         "type": {
-          "type": "string",
           "description": "The value of this property MUST be 'ssh'.",
           "const": "ssh"
         },
@@ -95,7 +94,6 @@
           "type": "string"
         },
         {
-          "type": "string",
           "enum": [
             "aaa",
             "analytics",

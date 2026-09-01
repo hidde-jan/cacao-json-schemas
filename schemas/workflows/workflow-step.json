@@ -101,7 +101,6 @@
   ],  
   "$defs": {
     "workflow-step-type-enum": {
-      "type": "string",
       "enum": [
         "start",
         "end",

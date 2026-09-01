@@ -40,7 +40,6 @@
           "type": "string"
         },
         {
-          "type": "string",
           "enum": [
             "bool",
             "dictionary",

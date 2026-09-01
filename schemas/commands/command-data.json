@@ -44,7 +44,6 @@
           "type": "string"
         },
         {
-          "type": "string",
           "enum": [
             "manual",
             "bash",
@@ -68,7 +67,6 @@
           "type": "string"
         },
         {
-          "type": "string",
           "enum": [
             "compose-content",
             "deliver-content",

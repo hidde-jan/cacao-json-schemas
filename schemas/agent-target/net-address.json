@@ -11,7 +11,6 @@
     {
       "properties": {
         "type": {
-          "type": "string",
           "description": "The value of this property MUST be 'net-address'.",
           "const": "net-address"
         },
@@ -90,7 +89,6 @@
           "type": "string"
         },
         {
-          "type": "string",
           "enum": [
             "aaa",
             "analytics",

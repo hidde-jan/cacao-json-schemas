@@ -6,12 +6,10 @@
   "type": "object",
   "properties": {
     "type": {
-      "type": "string",
       "description": "The value of this property MUST be 'playbook'.",
       "const": "playbook"
     },
     "spec_version": {
-      "type": "string",
       "description": "The version of the specification used to represent this playbook. The value of this property MUST be 'cacao-2.0' to represent the version of this specification.",
       "const": "cacao-2.0"
     },
@@ -343,7 +341,6 @@
           "type": "string"
         },
         {
-          "type": "string",
           "enum": [
             "attack",
             "detection",
@@ -363,7 +360,6 @@
           "type": "string"
         },
         {
-          "type": "string",
           "enum": [
             "compose-content",
             "deliver-content",
@@ -397,7 +393,6 @@
           "type": "string"
         },
         {
-          "type": "string",
           "enum": [
             "aerospace",
             "aviation",

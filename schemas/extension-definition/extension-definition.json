@@ -6,7 +6,6 @@
   "type": "object",
   "properties": {
     "type": {
-      "type": "string",
       "const": "extension-definition",
       "description": "The value of this property MUST be 'extension-definition'."
     },

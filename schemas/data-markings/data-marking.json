@@ -77,7 +77,6 @@
   ],
   "$defs": {
     "data-marking-type-enum": {
-      "type": "string",
       "enum": [
         "marking-statement",
         "marking-tlp",
