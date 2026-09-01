@@ -1,7 +1,7 @@
 {
   "$id": "https://raw.githubusercontent.com/oasis-open/cacao-json-schemas/main/schemas/commands/http-api.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "http-api",
+  "title": "http-api-command",
   "description": "The HTTP API command represents a command that is intended to be processed via an HTTP API. In addition to the inherited properties, this section defines the following additional properties that are valid for this type.",
   "type": "object",
   "allOf": [
