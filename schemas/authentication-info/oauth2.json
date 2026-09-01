@@ -12,9 +12,7 @@
         "type": {
           "type": "string",
           "description": "The value of this property MUST be 'oauth2'.",
-          "enum": [
-            "oauth2"
-          ]
+          "const": "oauth2"
         },
         "oauth_header": {
           "type": "string",

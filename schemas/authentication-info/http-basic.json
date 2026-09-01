@@ -12,9 +12,7 @@
         "type": {
           "type": "string",
           "description": "The value of this property MUST be 'http-basic'.",
-          "enum": [
-            "http-basic"
-          ]
+          "const": "http-basic"
         },
         "user_id": {
           "type": "string",

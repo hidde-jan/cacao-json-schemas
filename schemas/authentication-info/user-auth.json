@@ -12,9 +12,7 @@
         "type": {
           "type": "string",
           "description": "The value of this property MUST be 'user-auth'.",
-          "enum": [
-            "user-auth"
-          ]
+          "const": "user-auth"
         },
         "username": {
           "type": "string",
