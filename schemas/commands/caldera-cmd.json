@@ -26,5 +26,13 @@
       }
     }
   ],
+  "anyOf": [
+    {
+      "required": ["command"]
+    },
+    {
+      "required": ["command_b64"]
+    }
+  ],
   "unevaluatedProperties": false
 }
