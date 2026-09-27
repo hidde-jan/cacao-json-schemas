@@ -18,7 +18,73 @@
           "type": "array",
           "description": "A list of commands that are to be executed as part of this step. If more than one command is listed, the commands MUST be processed in the order in which they are listed (see section 5). All commands in a given step MUST be applicable to all the agents and all the targets defined in that step.",
           "items": {
-            "$ref": "../commands/command-data.json"
+            "oneOf": [
+              {
+                "$ref": "../commands/manual.json"
+              },
+              {
+                "$ref": "../commands/bash.json"
+              },
+              {
+                "$ref": "../commands/caldera-cmd.json"
+              },
+              {
+                "$ref": "../commands/elastic.json"
+              },
+              {
+                "$ref": "../commands/http-api.json"
+              },
+              {
+                "$ref": "../commands/jupyter.json"
+              },
+              {
+                "$ref": "../commands/kestrel.json"
+              },
+              {
+                "$ref": "../commands/openc2-http.json"
+              },
+              {
+                "$ref": "../commands/powershell.json"
+              },
+              {
+                "$ref": "../commands/sigma.json"
+              },
+              {
+                "$ref": "../commands/ssh.json"
+              },
+              {
+                "$ref": "../commands/yara.json"
+              },
+              {
+                "allOf": [
+                  {
+                    "$ref": "../commands/command-data.json"
+                  },
+                  {
+                    "properties": {
+                      "type": {
+                        "not": {
+                          "enum": [
+                            "manual",
+                            "bash",
+                            "caldera-cmd",
+                            "elastic",
+                            "http-api",
+                            "jupyter",
+                            "kestrel",
+                            "openc2-http",
+                            "powershell",
+                            "sigma",
+                            "ssh",
+                            "yara"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
           },
           "minItems": 1
         },
